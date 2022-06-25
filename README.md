@@ -6,3 +6,10 @@
 - **babel-loader**: allows transpiling Javascript files using babel and webpack.
 - **@babel/preset-env**: allows you to use the latest JavaScript without needing to micromanage which syntax transforms.
 - **@babel/preset-react**: use react preset when we are using Reactjs. Helps in converting html files to react based file.
+
+## Vscode
+
+### Extensions
+
+- esbenp.prettier-vscode
+- dbaeumer.vscode-eslint
