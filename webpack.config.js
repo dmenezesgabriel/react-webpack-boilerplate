@@ -1,12 +1,14 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-export default {
+module.exports = {
   mode: "development",
-  entry: "/src/index.js",
+  entry: path.resolve(__dirname, "src", "index.js"),
   output: {
-    path: "/dist",
-    filename: "bundle.js",
+    path: path.join(__dirname, "/dist"),
+    filename: "bundle.[contenthash].js",
   },
+  devtool: "source-map",
   module: {
     rules: [
       { test: /\.(js)$/, exclude: /node_modules/, use: ["babel-loader"] },
